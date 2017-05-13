@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl : /fttl-jekyll
+exclude : ['README.md']
