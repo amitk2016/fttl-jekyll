@@ -3,28 +3,12 @@
 <head>
 	<title>Fly To The Limit</title>
 	<script src="https://use.fontawesome.com/3ea3387309.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/styles.css">
 </head>
 <body>
-
-	<nav>
-				<ul>
-					<li><a href="{{site.baseurl}}/index.html" id="active-site">Home</a></li>
-					<li><a href="{{site.baseurl}}/about-us.html">About Us</a></li>
-					<li><a href="{{site.baseurl}}/flights.html">Flights</a></li>
-					<li><a href="{{site.baseurl}}/gallery.html">Gallery</a></li>
-					<li><a href="{{site.baseurl}}/contact.html">Contact</a></li>
-					<li><a href="{{site.baseurl}}/github.html">Github</a></li>
-				</ul>
-
-				<ul id="social">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="#"><i class="fa fa-flickr"></i></a></li>
-				</ul>
-		</nav>
+	
+	{% include nav.html %}
 
 		<div id="logo-box">
 			<div id="logo">
@@ -48,6 +32,76 @@
 
 {{content}}
 
+<footer>
+	<div class="footer-nav">
+		<ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="aboutUs.html">about us</a></li>
+			<li><a href="flights.html">flights</a></li>
+			<li><a href="gallery.html">gallery</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>	
+	</div>
+
+
+	<div id="bottom-left">
+		<div id="search-box">
+			<form>
+				<div>
+					<h1>Leave us a message</h1>
+					<input type="text" id="name" placeholder="Name..."></input>
+				</div>
+				<div>
+					<input type="email" id="email" placeholder="Email..."></input>
+				</div>
+				<div>
+					<textarea name="message" cols="20" rows="5" placeholder="Message..."></textarea>
+				</div>
+				<input id="footer-submit" type="submit" value="Submit">
+			</form>
+		</div>
+
+		<div id="left-address">
+			<h1>Payment Methods</h1>
+			<img src="images/payment.png">
+			
+			<i class="fa fa-phone" aria-hidden="true">
+			<span class="footer-span">  :  0800403885</span>
+			</i><br>
+			<i class="fa fa-envelope-o" aria-hidden="true">
+			<span class="footer-span">  :  info@flytothelimit.co.nz</span>
+			</i>
+		</div>
+
+	</div>
+
+	<div id="bottom-right">
+		<div id="contact">
+			<h1>Contact Us:</h1>
+
+				<h2>Wanaka Office:</h2>
+				<span>
+				47 Ardmore Street
+				<br>
+				Wanaka 9305	
+				</span>
+				<img src="images/google-map1.png" width="180" height="130">		
+		</div>
+
+		<div id="map">
+		<address>
+				<span><br>
+				<h2>Queenstown Office:</h2>
+				10 Gorge Road<br>
+				Queenstown 9300	
+				</span><br><br>
+			</address>
+			<img src="images/google-map2.png" width="180" height="130">
+			
+		</div>
+
+	</div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
